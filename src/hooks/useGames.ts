@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import apiClient from "../services/api/api-client";
-import { FetchGamesResponse, Game } from "../interface/fetchGamesResponse";
+import { FetchGamesResponse, Game } from "../interface";
 import { CanceledError } from "axios";
 
 const useGames = () => {
