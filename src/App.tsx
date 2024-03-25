@@ -26,5 +26,5 @@ const App = () => {
 export default App;
 
 /**
- * TODO: Displaying Platform Icons
+ * TODO: Displaying Critic Score
  */
