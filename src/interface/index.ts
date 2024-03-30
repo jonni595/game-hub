@@ -23,3 +23,17 @@ export interface FetchGamesResponse {
   previous: string | null;
   results: Game[];
 }
+
+export interface Genre {
+  id: number;
+  name: string;
+  image_background: string;
+}
+
+export interface GenreList {
+  onSelectedGenre: (genre: Genre) => void;
+}
+
+export interface GameGridProps {
+  selectedGenre: Genre | null;
+}
