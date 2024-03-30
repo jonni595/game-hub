@@ -32,6 +32,7 @@ export interface Genre {
 
 export interface GenreList {
   onSelectedGenre: (genre: Genre) => void;
+  selectedGenre: Genre | null;
 }
 
 export interface GameGridProps {
