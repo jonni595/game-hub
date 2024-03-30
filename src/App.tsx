@@ -29,5 +29,5 @@ const App = () => {
 export default App;
 
 /**
- * TODO: Displaying Critic Score
+ * TODO: Creating a Generic Data Fetching Hook
  */
