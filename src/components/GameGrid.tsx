@@ -3,10 +3,13 @@ import useGames from "../hooks/useGames";
 import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
-import { GameGridProps } from "../interface";
+import type { GameGridProps } from "../interface";
 
-const GameGrid: React.FC<GameGridProps> = ({ selectedGenre }) => {
-  const { data, error, isLoading } = useGames(selectedGenre);
+const GameGrid: React.FC<GameGridProps> = ({
+  selectedGenre,
+  selectedPlatform,
+}) => {
+  const { data, error, isLoading } = useGames(selectedGenre, selectedPlatform);
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8];
 
   return (
