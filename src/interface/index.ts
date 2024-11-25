@@ -1,3 +1,4 @@
+import { GameQuery } from "./../App";
 export interface Platform {
   id: number;
   name: string;
@@ -35,13 +36,12 @@ export interface GenreList {
   selectedGenre: Genre | null;
 }
 
-interface IPlatform {
+export interface IPlatform {
   id: number;
   name: string;
   slug: string;
 }
 
 export interface GameGridProps {
-  selectedGenre: Genre | null;
-  selectedPlatform: IPlatform | null;
+  gameQuery: GameQuery;
 }
