@@ -72,5 +72,5 @@ const App = () => {
 export default App;
 
 /**
- * TODO: 30. Searching Games
+ * TODO: 35. Shipping Static Data
  */
